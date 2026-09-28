@@ -1,0 +1,195 @@
+<!-- wp:html -->
+<h3 align="center">- Shared Print Services -</h3>
+<h4 align="center">This calculator attempts to capture the estimated costs of providing a wide variety of shared print services according to current best practices</h4>
+<!-- /wp:html -->
+
+<!-- wp:html --><hr />
+<table class="tbstriped">
+<tbody>
+<tr>
+<th scope="col">Input Your<br />Choice</th>
+<th scope="col">Service Type<br /><small>click <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /> for info about how the figures were calculated. Staff hourly wage was based on current <a href="https://www.bls.gov/ooh/education-training-and-library/librarians.htm">Occupational Outlook Handbook</a> estimate of $30/hour</small></th>
+<th scope="col">Value of <br />Services</th>
+</tr>
+<tr>
+<td>items</td>
+<td><details>
+<summary>Your Estimated Shared Print Collection Size <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small>Some rates used to make estimates in this area will increase by the size of the collection.</small></p>
+</details></td>
+<td><label for="collectionsize"><small>Many services are metered by collection size. For collections 1-5M titles, consider doubling the figures estimated below.<br />Over 5M? consider tripling</small></label></td>
+</tr>
+<tr>
+<td></td>
+<td><details>
+<summary>Marking 583 fields in Bib Data (no. of staff hours) <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small>Best practices recommend exposing commitment to retain in the bib data of each title</small></p>
+</details></td>
+<td><label for="booksResult">$ </label></td>
+</tr>
+<tr>
+<td></td>
+<td><details>
+<summary>Governance and member relations labor (no. of staff hours) <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small>Communication, managing elections, onboarding, etc.</small></p>
+</details></td>
+<td><label for="yaResult">$ </label></td>
+</tr>
+<tr>
+<td></td>
+<td><details>
+<summary>Gap filling and/or other management of commitments (no. of staff hours) <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small>Program-provided data about gaps in serials collections, titles for which need for commitments has been met, etc.</small></p>
+</details></td>
+<td><label for="childResult">$ </label></td>
+</tr>
+<tr>
+<td></td>
+<td><details>
+<summary>Ongoing collection analysis - staff time (no. of staff hours) <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small>a separate cost from a one-time initial collection analysis, including the identification of unique or scarcely-held materials as they are acquired.</small></p>
+</details></td>
+<td><label for="audiobooksResult">$ </label></td>
+</tr>
+<tr>
+<td></td>
+<td><details>
+<summary>Ongoing collection analysis - software licensing <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small>a separate cost from a one-time initial collection analysis, including the identification of unique or scarcely-held materials as they are acquired.</small></p>
+</details></td>
+<td><label for="illResult">$ </label></td>
+</tr>
+&lt;!-- <tr>
+
+<td></td>
+
+ <td><label for="cds">CDs Borrowed</label></td>
+
+ <td><label for="cdsResult">$
+
+</label></td>
+
+ </tr>
+
+ <tr>
+
+ <td colspan="3"><hr> </td>
+
+</tr>
+
+<tr>
+
+<td></td>
+
+ <td><label for="passes">Museum Passes Borrowed</label></td>
+
+<td><label for="passesResult">$
+
+ </label></td>
+
+</tr>
+
+<tr>
+
+ <td></td>
+
+<td><label for="newsuse">Newspaper Use in Library</label></td>
+
+<td><label for="newsuseResult">$
+
+ </label></td>
+
+</tr>
+
+<tr>
+
+ <td></td>
+
+ <td><label for="meetingroom"> Meeting Room Use per Hour</label></td>
+
+<td><label for="meetingroomResult">$
+
+ </label></td>
+
+</tr>
+
+<tr>
+
+ <td></td>
+
+ <td><label for="adultprogram">Adult Programs and Classes Attended</label></td>
+
+ <td><label for="adultprogramResult">$
+
+ </label></td>
+
+</tr>
+
+<tr>
+
+ <td></td>
+
+ <td><label for="childrensprogram">Children's Programs Attended</label></td>
+
+ <td><label for="childrensprogramResult">$
+
+ </label></td>
+
+</tr>
+
+<tr>
+
+ <td></td>
+
+ <td><label for="computerhours">Computer Use per hour</label>
+
+ (i.e. Internet, MS Word, etc.)</td>
+
+<td><label for="computerhoursResult">$
+
+ </label></td>
+
+</tr>
+
+<tr>
+
+ <td></td>
+
+<td><label for="reference">Reference Questions Asked</label></td>
+
+ <td><label for="referenceResult">$
+
+ </label></td>
+
+</tr>
+
+--&gt;
+<tr>
+<td colspan="2"> <span class="button">  </span></td>
+<td><label for="totalResult">$ </label></td>
+</tr>
+</tbody>
+</table>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p>function doCalculator(){ var booksValue = document.calculator.books.value * 30.00; document.getElementById("booksResult").value = booksValue.toFixed(2); var yaValue = document.calculator.ya.value * 30.00; document.getElementById("yaResult").value = yaValue.toFixed(2); var childValue = document.calculator.child.value * 30.00; document.getElementById("childResult").value = childValue.toFixed(2); var audiobooksValue = document.calculator.audiobooks.value * 30.00; document.getElementById("audiobooksResult").value = audiobooksValue.toFixed(2); var illValue = document.calculator.ill.value * 30.00; document.getElementById("illResult").value = illValue.toFixed(2); var totalValue = (document.calculator.booksResult.value*1)+(document.calculator.yaResult.value*1)+(document.calculator.childResult.value*1)+(document.calculator.audiobooksResult.value*1)+(document.calculator.illResult.value*1); document.getElementById("totalResult").value = totalValue.toFixed(2); } &lt;/script</p>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>The calculator worksheet has been adapted from original downloadable spreadsheet by the <a href="https://www.masslib.org">Massachusetts Library Association</a> and then adapted for the web by <a href="https://www.chelmsfordlibrary.org/">Chelmsford Public Library</a>. Maine State Library added extra accessibility coding and reformatting for ease of reading online.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">For more information</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Feel free to link to this calculator for patrons or use yourself with acknowledgement as we did.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>If you have any recommendations for how to improve these tools - or if you can provide real dollar amounts for any of these activities - please use the email link in our footer.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
