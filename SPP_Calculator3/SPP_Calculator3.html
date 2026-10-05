@@ -1,0 +1,172 @@
+<!-- wp:html -->
+<h3 align="center">- Participating Library Costs -</h3>
+<h4 align="center">This calculator attempts to capture the estimated cost to a library participating in a shared print program that provides a wide variety of services according to current best practices</h4>
+<!-- /wp:html -->
+
+<!-- wp:html --><form id="calculator" action="" method="post" name="calculator">
+<table class="tbstriped">
+<tbody>
+<tr>
+<th scope="col">Input Your<br />Choice</th>
+<th scope="col">Activity<br /><small>click <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /> for info about how the figures were calculated. Staff hourly wage was based on current <a href="https://www.bls.gov/ooh/education-training-and-library/librarians.htm">Occupational Outlook Handbook</a> estimate of $30/hour</small></th>
+<th scope="col">Value of <br />Services</th>
+</tr>
+<tr>
+<td><input id="cdsResult" size="5" type="text" value="0" />items</td>
+<td><details>
+<summary>Your Estimated Shared Print Collection Size <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+&lt;p<small>Some rates used to make estimates in this area will increase by the size of the collection.</small></details></td>
+<td><label for="cdsResult"><small>Many services are metered by collection size. For collections 1-5M titles, consider doubling the figures estimated below.<br />Over 5M? consider tripling</small></label></td>
+</tr>
+<tr>
+<td><input id="books" tabindex="1" name="books" size="5" type="text" /></td>
+<td><details>
+<summary>Selection and processing of materials for commitment (no. of staff hours) <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small>best practices recommend exposing commitment to retain in the bib data of each titlebest practices recommend exposing commitment to retain in the bib data of each title</small></p>
+</details></td>
+<td><label for="booksResult">$ <input id="booksResult" size="8" type="text" value="  0.00" /></label></td>
+</tr>
+<tr>
+<td><input id="ya" tabindex="2" name="ya" size="5" type="text" /></td>
+<td><details>
+<summary>Participation in governance activities (no. of staff hours) <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small>Committee work, meeting attendance, etc.</small></p>
+</details></td>
+<td><label for="yaResult">$ <input id="yaResult" size="8" type="text" value="  0.00" /></label></td>
+</tr>
+<tr>
+<td><input id="child" tabindex="3" name="child" size="5" type="text" /></td>
+<td><details>
+<summary>Required verification (no. of staff hours) <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small>Verification of holdings, item completeness, etc., as required by program</small></p>
+</details></td>
+<td><label for="childResult">$ <input id="childResult" size="8" type="text" value="  0.00" /></label></td>
+</tr>
+<tr>
+<td><input id="audiobooks" tabindex="6" name="audiobooks" size="5" type="text" /></td>
+<td><details>
+<summary>Material stored in open stacks space <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small>(i) Shelving open to patrons</small></p>
+</details></td>
+<td><label for="audiobooksResult">$ <input id="audiobooksResult" size="8" type="text" value="  0.00" /> per year</label></td>
+</tr>
+<tr>
+<td><input id="ill" tabindex="9" name="ill" size="5" type="text" /></td>
+<td><details>
+<summary>Material stored in closed stacks (high-density storage option) <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small> Shelving closed to patrons, regardless of specific location of facility (on- or off-site)</small></p>
+</details></td>
+<td><label for="illResult">$ <input id="illResult" size="8" type="text" value="  0.00" /> per year</label></td>
+</tr>
+<tr>
+<td><input id="passes" tabindex="7" name="passes" size="5" type="text" /></td>
+<td><details>
+<summary>Material stored in closed stacks (hybrid storage option) <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small> Shelving closed to patrons, but not necessarily high-density</small></p>
+</details></td>
+<td><label for="passesResult">$ <input id="passesResult" size="8" type="text" value="0.00" /> per year</label></td>
+</tr>
+<tr>
+<td><input id="movies" tabindex="5" name="movies" size="5" type="text" /></td>
+<td><details>
+<summary>Program membership cost (per institution) <img src="https://wordpress.clir.org/wp-content/uploads/sites/62/information-icon-6055-1.jpg" /></summary>
+<p><small> Annual fee (standalone shared print program) or portion of comprehensive annual fee (shared print embedded in consortium or other collaborative organization)</small></p>
+</details></td>
+<td><label for="moviesResult">$ <input id="moviesResult" size="8" type="text" value="0.00" /></label></td>
+</tr>
+<!-- <tr>
+              <td colspan="3"><hr>    </td>
+            </tr>
+            <tr>
+              <td><input type="text" name="passes" id="passes" size="5" onchange="doCalculator()" tabindex="7"></td>
+              <td><label for="passes">Museum Passes Borrowed</label></td>
+              <td><label for="passesResult">$
+                <input type="text" id="passesResult" size="5" value="0.00"></label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="newsuse" id="newsuse" size="5" onchange="doCalculator()" tabindex="8"></td>
+              <td><label for="newsuse">Newspaper Use in Library</label></td>
+              <td><label for="newsuseResult">$
+                <input type="text" id="newsuseResult" size="5" value="0.00"></label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="meetingroom" id="meetingroom" size="5" onchange="doCalculator()" tabindex="10"></td>
+              <td><label for="meetingroom"> Meeting Room Use per Hour</label></td>
+              <td><label for="meetingroomResult">$
+                <input type="text" id="meetingroomResult" size="5" value="0.00"></label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="adultprogram" id="adultprogram" size="5" onchange="doCalculator()" tabindex="12"></td>
+              <td><label for="adultprogram">Adult Programs and Classes Attended</label></td>
+              <td><label for="adultprogramResult">$
+                <input type="text" id="adultprogramResult" size="5" value="0.00"></label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="childrensprogram" id="childrensprogram" size="5" onchange="doCalculator()" tabindex="13"></td>
+              <td><label for="childrensprogram">Children's Programs Attended</label></td>
+              <td><label for="childrensprogramResult">$
+                <input type="text" id="childrensprogramResult" size="5" value="0.00"></label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="computerhours" id="computerhours" size="5" onchange="doCalculator()" tabindex="14"></td>
+              <td><label for="computerhours">Computer Use per hour</label>
+                (i.e. Internet, MS Word, etc.)</td>
+              <td><label for="computerhoursResult">$
+                <input type="text" id="computerhoursResult" size="5" value="0.00"></label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="reference" id="reference" size="5" onchange="doCalculator()" tabindex="17"></td>
+              <td><label for="reference">Reference Questions Asked</label></td>
+              <td><label for="referenceResult">$
+                <input type="text" id="referenceResult" size="5" value="0.00"></label></td>
+            </tr>
+-->
+<tr>
+<td colspan="2" align="center"><input tabindex="20" type="button" value="Calculate The Value of Shared Print" /> <input tabindex="21" type="reset" value="Clear Form" /></td>
+<td>$<input id="totalResult" name="totalResult" size="5" type="text" value="0.00" /></td>
+</tr>
+</tbody>
+</table>
+</form><!-- /wp:html -->
+
+<!-- wp:html -->
+<p><script type="text/javascript">
+//
+function doCalculator(){
+	var booksValue = document.calculator.books.value * 30.00;
+	document.getElementById("booksResult").value = booksValue.toFixed(2);
+	var yaValue = document.calculator.ya.value * 30.00;
+	document.getElementById("yaResult").value = yaValue.toFixed(2);
+	var childValue = document.calculator.child.value * 30.00;
+	document.getElementById("childResult").value = childValue.toFixed(2);
+	var audiobooksValue = document.calculator.audiobooks.value * 5.95;
+	document.getElementById("audiobooksResult").value = audiobooksValue.toFixed(2);
+	var illValue = document.calculator.ill.value * 1.20;
+	document.getElementById("illResult").value = illValue.toFixed(2);
+        var passesValue = document.calculator.passes.value * 2.14;
+	document.getElementById("passesResult").value = passesValue.toFixed(2);
+	var moviesValue = document.calculator.movies.value * 3000.00;
+	document.getElementById("moviesResult").value = moviesValue.toFixed(2);
+	var totalValue = (document.calculator.booksResult.value*1)+(document.calculator.yaResult.value*1)+(document.calculator.childResult.value*1)+(document.calculator.audiobooksResult.value*1)+(document.calculator.illResult.value*1)+(document.calculator.passesResult.value*1)+(document.calculator.moviesResult.value*1);
+	document.getElementById("totalResult").value = totalValue.toFixed(2);
+}
+              </script></p>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>The calculator worksheet has been adapted from original downloadable spreadsheet by the <a href="https://www.masslib.org">Massachusetts Library Association</a> and then adapted for the web by <a href="https://www.chelmsfordlibrary.org/library_info/calculator.html">Chelmsford Public Library</a>. Maine State Library added extra accessibility coding and reformatting for ease of reading online.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">For more information</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Feel free to link to this calculator for patrons or use yourself with acknowledgement as we did.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>If you have any recommendations for how to improve these tools - or if you can provide real dollar amounts for any of these activities - please use the email link in our footer.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
